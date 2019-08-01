@@ -4,7 +4,7 @@ import Header from '../components/Header_footer/Header'
 const Layout = (props) => {
   return (
     <div>
-      <Header/ >
+      <Header/>
       {props.children}
     </div>
   );
