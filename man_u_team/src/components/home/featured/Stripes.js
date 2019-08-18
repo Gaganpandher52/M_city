@@ -9,7 +9,7 @@ class Stripes extends Component {
       {
         background:'#98c5e9',
         left: 120,
-        rotate: 24,
+        rotate: 25,
         top: -260,
         delay:0
       },
@@ -39,6 +39,8 @@ class Stripes extends Component {
         start={{
           background:'#ffffff',
           opacity:0,
+          rotate:0,
+          top:0,
           left:0
         }}
 
@@ -46,17 +48,19 @@ class Stripes extends Component {
           background:[stripe.background],
           opacity:[1],
           left:[stripe.left], 
+          rotate:[stripe.rotate],
+          top:[stripe.top], 
           timing:{delay:500, duration:200, ease:easePolyOut}
         }}
       >
-        {({opacity,left,background})=>{
+        {({opacity,left,rotate,top,background})=>{
           return(
             <div
               className='stripe'
               style={{
                 background,
                 opacity,
-                transform:`rotate(0deg) translate(${left}0px,0px)`
+                transform:`rotate(${rotate}deg) translate(${left}px,${top}px)`
               }}
             ></div>
           );
