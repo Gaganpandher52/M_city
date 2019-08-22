@@ -9,9 +9,10 @@ export const Tag = (props) => {
       color:props.color,
       padding:'5px 5px',
       display:'inline-block',
-      fontFamily: 'Righteous'
+      fontFamily: 'Righteous',
+      ...props.add
     }}
-  >tag</div>
+  >{props.children}</div>
 
   if(props.link){
     return(
