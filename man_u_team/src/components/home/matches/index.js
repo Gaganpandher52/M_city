@@ -16,7 +16,7 @@ const MatchesHome = () => {
         BLOCK
 
         <Tag
-          bck='#0e1731'
+          bck='#ffffff'
           size='22px'
           color='#0e1731'
           link={true}
