@@ -1,10 +1,24 @@
 import React from 'react';
 
 const MatchesBlock = ({match}) => {
-  console.log(match)
+  
   return (
-    <div>
-      block
+    <div className='match_block'>
+      <div className='match_date'> 
+        {match.final ? match.date : `Match not played yet: ${match.date}`}
+      </div>
+      <div className='match_wrapper'>
+        <div className='match_top'>
+          <div className='match_left'>
+            <div className='icon'></div>
+          </div>
+          <div className='match_right'>
+
+          </div>
+
+        </div>
+
+      </div>
       
     </div>
   );
