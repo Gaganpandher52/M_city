@@ -1,9 +1,22 @@
 import React from 'react';
 
-const FormField = () => {
+const FormField = ({formdata, id}) => {
+
+   const renderTemplate = () => {
+     let formTemplate = null;
+
+     switch(formdata.element){
+       case('input'):
+       break;
+       default:
+        formTemplate = null;
+     }
+     return formTemplate 
+   }
+
   return (
     <div>
-      FormFields
+      {renderTemplate()}
       
     </div>
   );

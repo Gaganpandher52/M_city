@@ -37,7 +37,13 @@
               Enter your email
             </div>
             <div className='enroll_input'>
-              <FormField/>
+              <FormField
+                id={'email'}
+                formdata={this.state.formdata.email}
+                
+              
+              
+              />
               
             </div>
 
