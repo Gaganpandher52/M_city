@@ -4,6 +4,7 @@ import Matches from './matches'
 import MeetPlayers from './meetPlayers'
 import Promotion from './promotion'
 
+
 const Home = () => {
   return (
     <div className='bck_blue'>
@@ -11,6 +12,7 @@ const Home = () => {
       <Matches/> 
       <MeetPlayers/>
       <Promotion/>
+      
 
       
     </div>
