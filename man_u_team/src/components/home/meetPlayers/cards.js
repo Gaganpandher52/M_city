@@ -46,7 +46,7 @@ class HomeCards extends Component {
           timing: {duration: 500, ease: easePolyOut}
         }}
       >
-        {(left, bottom)=>{
+        {({left, bottom})=>{
           return (
             <div
               style={{
