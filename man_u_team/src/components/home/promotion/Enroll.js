@@ -10,7 +10,7 @@
     formSuccess:'',
     formdata:{
       email:{
-        element:'imput',
+        element:'input',
         value:'',
         config:{
           name:'email_imput',
@@ -25,9 +25,12 @@
         validationMessage:''
       }
     }
+  }
+  
+   submitForm(){
 
-  } 
-
+   }
+   
    render() {
      return (
        <Fade>
@@ -41,8 +44,6 @@
                 id={'email'}
                 formdata={this.state.formdata.email}
                 
-              
-              
               />
               
             </div>
