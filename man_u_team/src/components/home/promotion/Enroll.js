@@ -13,7 +13,7 @@
         element:'input',
         value:'',
         config:{
-          name:'email_imput',
+          name:'email_input',
           type:'email',
           placeholder:'Enter your email'
         },
@@ -26,6 +26,13 @@
       }
     }
   }
+
+
+  updateForm(element){
+    console.log(element)
+
+  }
+  
   
    submitForm(){
 
@@ -43,6 +50,7 @@
               <FormField
                 id={'email'}
                 formdata={this.state.formdata.email}
+                change={(element)=>this.updateForm(element)}
                 
               />
               

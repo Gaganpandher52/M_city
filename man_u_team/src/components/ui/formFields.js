@@ -1,6 +1,7 @@
 import React from 'react';
+// import { Change } from '@firebase/database/dist/src/core/view/Change';
 
-const FormField = ({formdata, id}) => {
+const FormField = ({formdata, id, change }) => {
 
    const renderTemplate = () => {
     
@@ -13,6 +14,8 @@ const FormField = ({formdata, id}) => {
           <div>
             <input
               {...formdata.config}
+              value={formdata.value}
+              onChange={(event)=>change({event,id})}
             />
           </div>
         )
