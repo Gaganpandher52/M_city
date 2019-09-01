@@ -33,6 +33,11 @@
     const newElement = {...newFormdata[element.id]};
 
     newElement.value = element.event.target.value;
+    newFormdata[element.id] = newElement;
+
+    this.setState({
+      formdata: newFormdata
+    })
     
 
   }
