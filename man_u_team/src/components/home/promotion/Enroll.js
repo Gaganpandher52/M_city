@@ -39,7 +39,7 @@
     newElement.valid = validData[0];
     newElement.validationMessage = validData[1]
 
-    console.log(newFormdata);
+    // console.log(newFormdata);
 
 
     newFormdata[element.id] = newElement;
