@@ -52,7 +52,17 @@
   }
   
   
-   submitForm(){
+   submitForm(event){
+     event.preventDefault();
+
+     let dataToSubmit = {};
+     let formIsValid = true;
+
+     for(let key in this.state.formdata){
+       dataToSubmit[key] = this.state.formdata[key].value;
+
+     }
+     console.log(dataToSubmit);
 
    }
    
