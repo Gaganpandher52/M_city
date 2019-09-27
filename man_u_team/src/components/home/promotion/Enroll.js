@@ -71,6 +71,7 @@
                 change={(element)=>this.updateForm(element)}
                 
               />
+              <button onClick={(event)=>this.submitForm(event)}>Enroll</button>
               
             </div>
 
