@@ -91,10 +91,10 @@
                 change={(element)=>this.updateForm(element)}
                 
               />
-              {/* {this.state.formError ? 
+              {this.state.formError ? 
                 <div className='error_label'>Something is wrong, try again</div>
                 :null
-              } */}
+              }
               <button onClick={(event)=>this.submitForm(event)}>Enroll</button>
               
             </div>
