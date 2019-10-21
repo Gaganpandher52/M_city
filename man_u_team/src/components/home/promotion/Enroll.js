@@ -47,8 +47,10 @@
     this.setState({
       formdata: newFormdata
     })
-    
+  }
 
+  resetFormSuccess(){
+    
   }
   
   
@@ -65,6 +67,7 @@
      }
      if(formIsValid){
       console.log(dataToSubmit);
+      this.resetFormSuccess()
 
      }else{
       this.setState({
@@ -95,6 +98,7 @@
                 <div className='error_label'>Something is wrong, try again</div>
                 :null
               }
+              <div className='success_label'>{this.state.formSuccess}</div>
               <button onClick={(event)=>this.submitForm(event)}>Enroll</button>
               
             </div>
