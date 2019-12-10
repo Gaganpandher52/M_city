@@ -2,6 +2,7 @@
  import Fade from 'react-reveal/Fade';
  import FormField from '../../ui/formFields';
  import { validate } from '../../ui/misc';
+ import { firebasePromotions } from '../../../firebase'
 
  
  class Enroll extends Component {
@@ -89,8 +90,12 @@
 
      }
      if(formIsValid){
-      console.log(dataToSubmit);
-      this.resetFormSuccess()
+      firebasePromotions.orderByChild('email').equalTo(dataToSubmit.email).once('value')
+      .then((snapshot)=>{
+        console.log(snapshot.val());
+
+      })
+      // this.resetFormSuccess()
 
      }else{
       this.setState({
