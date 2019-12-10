@@ -62,8 +62,18 @@
       formError:false,
       formdata:newFormdata,
       formSuccess:'Congratulations'
-    })
+    });
+    this.successMessage();
     
+  }
+
+  successMessage(){
+    setTimeout(()=>{
+      this.setState({
+        formSuccess:''
+      })
+    },2000)
+
   }
   
   
