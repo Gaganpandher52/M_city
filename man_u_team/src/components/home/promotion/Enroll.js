@@ -58,6 +58,11 @@
       newFormdata[key].validationMessage = '';
 
     }
+    this.setState({
+      formError:false,
+      formdata:newFormdata,
+      formSuccess:'Congratulations'
+    })
     
   }
   
