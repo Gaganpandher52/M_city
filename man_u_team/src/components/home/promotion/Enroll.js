@@ -99,11 +99,8 @@
           this.resetFormSuccess(false)
 
         }
-        
-
       })
       
-
      }else{
       this.setState({
         form: true
@@ -135,6 +132,7 @@
               }
               <div className='success_label'>{this.state.formSuccess}</div>
               <button onClick={(event)=>this.submitForm(event)}>Enroll</button>
+              <div className='enroll_discl'>Only one email per person</div>
               
             </div>
 
