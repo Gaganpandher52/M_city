@@ -64,7 +64,7 @@
       formdata:newFormdata,
       formSuccess:type ? 'Congratulations' : "Already on the database"
     });
-    // this.successMessage();
+    this.successMessage();
     
   }
 
