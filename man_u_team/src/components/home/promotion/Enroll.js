@@ -78,17 +78,17 @@
   }
   
   
-   submitForm(event){
-     event.preventDefault();
+  //  submitForm(event){
+  //    event.preventDefault();
 
-     let dataToSubmit = {};
-     let formIsValid = true;
+  //    let dataToSubmit = {};
+  //    let formIsValid = true;
 
-     for(let key in this.state.formdata){
-       dataToSubmit[key] = this.state.formdata[key].value;
-       formIsValid = this.state.formdata[key].valid && formIsValid;
+  //    for(let key in this.state.formdata){
+  //      dataToSubmit[key] = this.state.formdata[key].value;
+  //      formIsValid = this.state.formdata[key].valid && formIsValid;
 
-     }
+  //    }
      if(formIsValid){
       firebasePromotions.orderByChild('email').equalTo(dataToSubmit.email).once('value')
       .then((snapshot)=>{
