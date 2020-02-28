@@ -89,17 +89,17 @@
        formIsValid = this.state.formdata[key].valid && formIsValid;
 
      }
-    //  if(formIsValid){
-    //   firebasePromotions.orderByChild('email').equalTo(dataToSubmit.email).once('value')
-    //   .then((snapshot)=>{
-    //     if(snapshot.val() === null){
-    //       firebasePromotions.push(dataToSubmit);
-    //       this.resetFormSuccess(true)
-    //     }else{
-    //       this.resetFormSuccess(false)
+     if(formIsValid){
+      firebasePromotions.orderByChild('email').equalTo(dataToSubmit.email).once('value')
+      .then((snapshot)=>{
+        if(snapshot.val() === null){
+          firebasePromotions.push(dataToSubmit);
+          this.resetFormSuccess(true)
+        }else{
+          this.resetFormSuccess(false)
 
-    //     }
-    //   })
+        }
+      })
       
      }else{
       this.setState({
