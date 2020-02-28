@@ -62,7 +62,7 @@
     this.setState({
       formError:false,
       formdata:newFormdata,
-      // formSuccess:type ? 'Congratulations' : "Already on the database"
+      formSuccess:type ? 'Congratulations' : "Already on the database"
     });
     this.successMessage();
     
@@ -113,33 +113,33 @@
    
    render() {
      return (
-      //  <Fade>
-      //   <div className='enroll_wrapper'>
-      //     <form onSubmit={(event)=>this.submitForm(event)}>
-      //       <div className='enroll_title'>
-      //         Enter your email
-      //       </div>
-      //       <div className='enroll_input'>
-      //         <FormField
-      //           id={'email'}
-      //           formdata={this.state.formdata.email}
-      //           change={(element)=>this.updateForm(element)}
+       <Fade>
+        <div className='enroll_wrapper'>
+          <form onSubmit={(event)=>this.submitForm(event)}>
+            <div className='enroll_title'>
+              Enter your email
+            </div>
+            <div className='enroll_input'>
+              <FormField
+                id={'email'}
+                formdata={this.state.formdata.email}
+                change={(element)=>this.updateForm(element)}
                 
-      //         />
-      //         {this.state.formError ? 
-      //           <div className='error_label'>Something is wrong, try again</div>
-      //           :null
-      //         }
-      //         <div className='success_label'>{this.state.formSuccess}</div>
-      //         <button onClick={(event)=>this.submitForm(event)}>Enroll</button>
-      //         <div className='enroll_discl'>Only one email per person</div>
+              />
+              {this.state.formError ? 
+                <div className='error_label'>Something is wrong, try again</div>
+                :null
+              }
+              <div className='success_label'>{this.state.formSuccess}</div>
+              <button onClick={(event)=>this.submitForm(event)}>Enroll</button>
+              <div className='enroll_discl'>Only one email per person</div>
               
-      //       </div>
+            </div>
 
-      //     </form>
+          </form>
           
-      //   </div>
-      //  </Fade>
+        </div>
+       </Fade>
      );
    }
  }
