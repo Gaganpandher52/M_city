@@ -13,7 +13,7 @@ class Header extends Component {
         position='fixed'
         style={{
           backgroundColor:'#98c5e9',
-          // boxShadow:'none',
+          boxShadow:'none',
           padding:'10px 0',
           borderBottom: '2px solid #00285e'
 
@@ -27,7 +27,7 @@ class Header extends Component {
                 link={true}
                 linkTo='/'
                 width='70px'
-                // height='70px'
+                height='70px'
               /> 
             </div>
           </div>
@@ -35,7 +35,7 @@ class Header extends Component {
             <Button color='inherit'>The TEAM</Button>
           </Link>
           <Link to='/the_matches'>
-            <Button color='inherit'>MATCHES</Button>
+            {/* <Button color='inherit'>MATCHES</Button> */}
           </Link>
         </ToolBar>
 
