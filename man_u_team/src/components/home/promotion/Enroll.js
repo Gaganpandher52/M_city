@@ -73,7 +73,7 @@
       this.setState({
         formSuccess:''
       })
-    },2000)
+    },3000)
 
   }
   
@@ -90,7 +90,7 @@
 
      }
      if(formIsValid){
-      firebasePromotions.orderByChild('email').equalTo(dataToSubmit.email).once('valuee')
+      firebasePromotions.orderByChild('email').equalTo(dataToSubmit.email).once('value')
       .then((snapshot)=>{
         if(snapshot.val() === null){
           firebasePromotions.push(dataToSubmit);
