@@ -90,7 +90,7 @@
 
      }
      if(formIsValid){
-      firebasePromotions.orderByChild('email').equalTo(dataToSubmit.email).once('value')
+      firebasePromotions.orderByChild('email').equalTo(dataToSubmit.email).once('valuee')
       .then((snapshot)=>{
         if(snapshot.val() === null){
           firebasePromotions.push(dataToSubmit);
@@ -123,14 +123,14 @@
               <FormField
                 id={'email'}
                 formdata={this.state.formdata.email}
-                // change={(element)=>this.updateForm(element)}
+                change={(element)=>this.updateForm(element)}
                 
               />
               {this.state.formError ? 
                 <div className='error_label'>Something is wrong, try again</div>
                 :null
               }
-              {/* <div className='success_label'>{this.state.formSuccess}</div> */}
+              <div className='success_label'>{this.state.formSuccess}</div>
               <button onClick={(event)=>this.submitForm(event)}>Enroll</button>
               <div className='enroll_discl'>Only one email per person</div>
               
