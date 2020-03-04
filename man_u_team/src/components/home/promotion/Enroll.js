@@ -73,7 +73,7 @@
       this.setState({
         formSuccess:''
       })
-    },3000)
+    },2000)
 
   }
   
