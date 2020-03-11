@@ -60,7 +60,7 @@
 
     }
     this.setState({
-      // formError:false
+      formError:false,
       formdata:newFormdata,
       formSuccess:type ? 'Congratulations' : "Already on the database"
     });
