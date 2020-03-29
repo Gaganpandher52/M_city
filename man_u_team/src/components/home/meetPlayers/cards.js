@@ -56,12 +56,12 @@ class HomeCards extends Component {
                 bottom
               }}
             >
-              {/* <PlayerCard
+              <PlayerCard
                 number='30'
                 name='Nicolus'
                 lastname='Otamendi'
                 bck={Otamendi}
-              /> */}
+              />
             </div>
           )
         }}
