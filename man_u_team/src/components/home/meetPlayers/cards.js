@@ -12,7 +12,7 @@ class HomeCards extends Component {
     cards:[
       {
         bottom: 90,
-        left: 100
+        left: 300
       },
       {
         bottom: 60,
